@@ -1,0 +1,12 @@
+<diagram program="umletino" version="15.1"><zoom_level>11</zoom_level><element><id>UMLClass</id><coordinates><x>319</x><y>99</y><w>231</w><h>77</h></coordinates><panel_attributes>File: main.c 
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>319</x><y>242</y><w>231</w><h>77</h></coordinates><panel_attributes>File : .cpp
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>88</x><y>440</y><w>231</w><h>77</h></coordinates><panel_attributes>Interface : IAccelerometer
+--
+[Methods]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>385</x><y>440</y><w>231</w><h>77</h></coordinates><panel_attributes>Interface : ICommunication
+--
+[Methods]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>682</x><y>440</y><w>231</w><h>77</h></coordinates><panel_attributes>_object: Class_
+--
+id: Long="36548"
+[waiting for message]</panel_attributes><additional_attributes></additional_attributes></element></diagram>
