@@ -1,0 +1,42 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 21,
+    "patch": 1
+  },
+  "configurePresets": [
+    {
+      "name": "base",
+      "description": "Base Configuration",
+      "generator": "Unix Makefiles",
+      "toolchainFile": "${sourceDir}/cmake/stm32.cmake",
+      "cacheVariables": {
+        "CMAKE_MODULE_PATH": "${sourceDir}/cmake"
+      }
+    },
+    {
+      "name": "release_build",
+      "description": "Release Build",
+      "binaryDir": "${sourceDir}/build/release",
+
+      "inherits": [
+        "base"
+      ],
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
+      "name": "debug_build",
+      "description": "Debug Build",
+      "binaryDir": "${sourceDir}/build/debug",
+      "inherits": [
+        "base"
+      ],
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    }
+  ]
+}
