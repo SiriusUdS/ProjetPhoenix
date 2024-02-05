@@ -34,7 +34,10 @@ RUN apt update && apt install -y                         \
  wget                                                    \
  cmake                                                   \
  gcc-arm-none-eabi gdb-arm-none-eabi                     \
- && rm -rf /var/lib/apt/lists/*
+ protobuf-compiler                                       \
+ python3                                                 \
+ python3-pip                                             \
+&& rm -rf /var/lib/apt/lists/*
 
 
 
