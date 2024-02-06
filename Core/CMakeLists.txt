@@ -1,5 +1,4 @@
 
-
 file(GLOB_RECURSE SOURCES
         ${CMAKE_CURRENT_SOURCE_DIR}/*.c
         ${CMAKE_CURRENT_SOURCE_DIR}/*.s
@@ -22,5 +21,6 @@ add_custom_command(TARGET ${PROJECT_NAME}.elf POST_BUILD
 Building ${BIN_FILE}")
 
 target_link_libraries(${PROJECT_NAME}.elf drivers)
+target_link_libraries(${PROJECT_NAME}.elf proto)
 target_link_libraries(${PROJECT_NAME}.elf middleware)
 
