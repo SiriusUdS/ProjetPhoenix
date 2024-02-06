@@ -37,6 +37,7 @@ RUN apt update && apt install -y                         \
  protobuf-compiler                                       \
  python3                                                 \
  python3-pip                                             \
+ nanopb                                                  \
 && rm -rf /var/lib/apt/lists/*
 
 
