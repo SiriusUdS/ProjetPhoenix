@@ -1,6 +1,6 @@
 set(NANOPB_SRC_ROOT_FOLDER "${CMAKE_CURRENT_SOURCE_DIR}/nanopb")
 # Define the command to be executed
-set(COMMAND_TO_RUN python3 ${NANOPB_SRC_ROOT_FOLDER}/generator/nanopb_generator.py  simple.proto)
+set(COMMAND_TO_RUN python3 /usr/bin/nanopb_generator.py  simple.proto)
 
 # Run the command using execute_process
 execute_process(
