@@ -9,9 +9,7 @@ Description:
         "context": "..",
         "dockerfile": ".devcontainer/Dockerfile",
      },
-    "runArgs": [
-        "-v", "${localEnv:USERPROFILE}/.gitconfig:/home/user/.gitconfig",
-         ],
+    "runArgs": ["-v", "/dev/:/dev"],
     "privileged": true,
     "workspaceFolder": "/opt/ProjetPhoenix",
     "postAttachCommand": [ "git config --global --add safe.directory /opt/ProjetPhoenix"]
