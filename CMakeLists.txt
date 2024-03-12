@@ -3,28 +3,17 @@ set(CMAKE_SYSTEM_NAME Generic)
 set(CMAKE_SYSTEM_VERSION 1)
 cmake_minimum_required(VERSION 3.27)
 
-# specify cross-compilers and tools
-
 # project settings
 project(projectPhoenix C CXX ASM)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_C_STANDARD 11)
 
-#Uncomment for hardware floating point
-#add_compile_definitions(ARM_MATH_CM4;ARM_MATH_MATRIX_CHECK;ARM_MATH_ROUNDING)
-#add_compile_options(-mfloat-abi=hard -mfpu=fpv4-sp-d16)
-#add_link_options(-mfloat-abi=hard -mfpu=fpv4-sp-d16)
+
 
 #Uncomment for software floating point
 #add_compile_options(-mfloat-abi=soft)
 
-
-
-# uncomment to mitigate c++17 absolute addresses warnings
-#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-register")
-
 # Enable assembler files preprocessing
-
 
 if ("${CMAKE_BUILD_TYPE}" STREQUAL "Release")
     message(STATUS "Maximum optimization for speed")
