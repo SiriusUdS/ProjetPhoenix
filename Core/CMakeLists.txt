@@ -24,3 +24,4 @@ target_link_libraries(${PROJECT_NAME}.elf drivers)
 target_link_libraries(${PROJECT_NAME}.elf proto)
 target_link_libraries(${PROJECT_NAME}.elf middleware)
 
+
