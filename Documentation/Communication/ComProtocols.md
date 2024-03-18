@@ -42,3 +42,4 @@
 
 ### Modes d'opération
 #### Full-Duplex
+![alt text](Images/SPI_FullDuplex.PNG "Full-Duplex PIN Configuration")
