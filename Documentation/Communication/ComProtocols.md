@@ -8,17 +8,17 @@
 # Components
 ## Specs
 ### Datasheets
-- Télecom : [XBEE](https://www.digi.com/resources/documentation/digidocs/pdfs/90002173.pdf "XBEE Datasheet")
-- Accéléromètre/Gyroscope/Magnétomètre : [Adafruit_TDK_InvenSense](https://learn.adafruit.com/adafruit-tdk-invensense-icm-20948-9-dof-imu/overview "Adafruit TDK InvenSense Datasheet")
-- Altimètre/Thermomètre : [BMP388](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp388-ds001.pdf "BMP388 Datasheet")
+- Telecom : [XBEE](https://www.digi.com/resources/documentation/digidocs/pdfs/90002173.pdf "XBEE Datasheet")
+- Accelerometer/Gyroscope/Magnetometer : [Adafruit_TDK_InvenSense](https://learn.adafruit.com/adafruit-tdk-invensense-icm-20948-9-dof-imu/overview "Adafruit TDK InvenSense Datasheet")
+- Altimeter/Thermometer : [BMP388](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp388-ds001.pdf "BMP388 Datasheet")
 - GPS : [BN-220](https://files.banggood.com/2016/11/BN-220%20GPS+Antenna%20datasheet.pdf "BN-220 Datasheet")
 ### Communication
 #### Supported Protocols
 | Type                       | Nom                     | I2C   | UART   | SPI   | NMEA 0183 |
 | -------------------------- | ----------------------- | :---: | :----: | :---: | :------:  |
 | Telecomunication           | XBEE                    |       | X      | X     |           |
-| Acceléro/Gyro/Magnétomètre | Adafruit TDK InvenSense | X     |        | X     |           |
-| Altimètre/Thermomètre      | BMP388                  | X     |        | X     |           |
+| Accelero/Gyro/Magnetometer | Adafruit TDK InvenSense | X     |        | X     |           |
+| Altimeter/Thermometer      | BMP388                  | X     |        | X     |           |
 | GPS                        | BN-220                  |       |        |       | X         |
 
 # Communication Protocols
@@ -64,7 +64,7 @@
 | CPOL  | Clock Polarity |
 | CPHA  | Clock Phase    |
 
-### Modes d'opération (Configuration des pins)
+### Operating modes (Pin configuration)
 #### Full-Duplex (1:1)
 ![alt text](Images/SPI_FullDuplex.PNG "Full-Duplex PIN Configuration")
 #### Half-Duplex
