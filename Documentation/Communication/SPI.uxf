@@ -1,0 +1,44 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLPackage</id><coordinates><x>150</x><y>80</y><w>120</w><h>130</h></coordinates><panel_attributes>Master
+--
+Clock
+
+Output
+
+Input
+
+Chip Select
+halign=right</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>480</x><y>80</y><w>120</w><h>130</h></coordinates><panel_attributes>Slave
+--
+Clock
+
+Input
+
+Output
+
+Chip Select
+halign=left</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>90</y><w>240</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+CLK, SCK</panel_attributes><additional_attributes>220;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>120</y><w>240</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+SDO, MOSI, COPI</panel_attributes><additional_attributes>220;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>180</y><w>240</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+SS, CS</panel_attributes><additional_attributes>220;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>150</y><w>240</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+SDI, MISO, CIPO</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>290</x><y>60</y><w>170</w><h>180</h></coordinates><panel_attributes>Possible Pin Names
+halign=center</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>90</x><y>0</y><w>570</w><h>280</h></coordinates><panel_attributes>Full Duplex (1:1)
+halign=center</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>150</x><y>390</y><w>120</w><h>100</h></coordinates><panel_attributes>Master
+--
+Clock
+
+Output
+
+Chip Select
+halign=right</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>400</y><w>240</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+CLK, SCK</panel_attributes><additional_attributes>220;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>430</y><w>240</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+SIO, SDIO</panel_attributes><additional_attributes>220;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>460</y><w>240</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+SS, CS</panel_attributes><additional_attributes>220;20;10;20</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>480</x><y>390</y><w>120</w><h>100</h></coordinates><panel_attributes>Slave
+--
+Clock
+
+Input
+
+Chip Select
+halign=left</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>290</x><y>370</y><w>170</w><h>160</h></coordinates><panel_attributes>Possible Pin Names
+halign=center</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>90</x><y>310</y><w>570</w><h>260</h></coordinates><panel_attributes>Half Duplex (1:1)
+halign=center</panel_attributes><additional_attributes></additional_attributes></element></diagram>
