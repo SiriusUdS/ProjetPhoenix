@@ -10,11 +10,12 @@
 
 ##### Data Transfer (Full-Duplex)
 ###### Output
-| Nom   | Signification                |
-| ----- | ---------------------------- |
-| SDO   | Serial Data Out              |
-| MOSI  | Master Out Slave In          |
-| COPI  | Controller Out Peripheral In |
+| Nom   | Signification                | | Nom   | Signification                |
+| ----- | ---------------------------- | | ----- | ---------------------------- |
+| SDO   | Serial Data Out              | | SDI   | Serial Data In               |
+| MOSI  | Master Out Slave In          | | MISO  | Master In Slave Out          |
+| COPI  | Controller Out Peripheral In | | CIPO  | Controller In Peripheral Out |
+
 ###### Input
 | Nom   | Signification                |
 | ----- | ---------------------------- |
