@@ -1,9 +1,9 @@
 # Overview
 ## [Components](#components)
-### - [Specs](#specs)
-#### -- [Datasheets](#datasheets)
-### - [Communication](#communication)
-#### -- [Supported-Protocols](#supported-protocols)
+###   [Specs](#specs)
+####     [Datasheets](#datasheets)
+###   [Communication](#communication)
+####     [Supported-Protocols](#supported-protocols)
 
 ## [Communication-Protocols](#communication-protocols)
 ### - [SPI-(Serial-Peripheral-Interface)](#spi-serial-peripheral-interface)
