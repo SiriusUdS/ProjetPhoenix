@@ -1,42 +1,68 @@
-# Protocoles de communication
+# Overview
+## [Components](#components)
+### - [Specs](#specs)
+#### -- [Datasheets](#datasheets)
+### - [Communication](#communication)
+#### -- [Supported-Protocols](#supported-protocols)
+
+## [Communication-Protocols](#communication-protocols)
+### - [SPI-(Serial-Peripheral-Interface)](#spi-serial-peripheral-interface)
+
+# Components
+## Specs
+### Datasheets
+- Télecom : [XBEE](https://www.digi.com/resources/documentation/digidocs/pdfs/90002173.pdf "XBEE Datasheet")
+- Accéléromètre/Gyroscope/Magnétomètre : [Adafruit_TDK_InvenSense](https://learn.adafruit.com/adafruit-tdk-invensense-icm-20948-9-dof-imu/overview "Adafruit TDK InvenSense Datasheet")
+- Altimètre/Thermomètre : [BMP388](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp388-ds001.pdf "BMP388 Datasheet")
+- GPS : 
+### Communication
+#### Supported Protocols
+| Type                       | Nom                     | I2C   | UART   | SPI   | RS-232   |
+| -------------------------- | ----------------------- | :---: | :----: | :---: | :------: |
+| Telecomunication           | XBEE                    |       | X      | X     |          |
+| Acceléro/Gyro/Magnétomètre | Adafruit TDK InvenSense | X     |        | X     |          |
+| Altimètre/Thermomètre      | BMP388                  | X     |        | X     |          |
+| GPS                        |                         |       |        |       |          |
+
+# Communication Protocols
 ## SPI (Serial Peripheral Interface)
 ### Nomenclature
 #### PINS
 ##### Clock
-| Nom   | Signification |
+| Name  | Meaning       |
 | ----- | ------------- |
 | CLK   | Clock         |
 | SCK   | Serial Clock  |
 
 ##### Data Transfer (Full-Duplex)
 ###### Output
-| Nom   | Signification                |
+| Name  | Meaning                      |
 | ----- | ---------------------------- |
 | SDO   | Serial Data Out              |
 | MOSI  | Master Out Slave In          |
 | COPI  | Controller Out Peripheral In |
 
 ###### Input
-| Nom   | Signification                |
+| Name  | Meaning                      |
 | ----- | ---------------------------- |
 | SDI   | Serial Data In               |
 | MISO  | Master In Slave Out          |
 | CIPO  | Controller In Peripheral Out |
 
 ##### Data Transfer (Half-Duplex)
-| Nom   | Signification      |
+| Name  | Meaning            |
 | ----- | ------------------ |
 | SIO   | Serial In/Out      |
 | SDIO  | Serial Data In/Out |
 
 ##### Chip Select
-| Nom     | Signification |
+| Name    | Meaning       |
 | -----   | ------------- |
 | CS      | Chip Select   |
 | SS/SSEL | Slave Select  |
 
-#### Modes
-| Nom   | Signification  |
+#### SPI Modes
+| Name  | Meaning        |
 | ----- | -------------- |
 | CPOL  | Clock Polarity |
 | CPHA  | Clock Phase    |
@@ -48,19 +74,3 @@
 ![alt text](Images/SPI_HalfDuplex.PNG "Half-Duplex PIN Configuration")
 #### Full-Duplex (1:n)
 ![alt text](Images/SPI_FullDuplex_Mult.PNG "Full-Duplex PIN Configuration, for multiple slaves")
-
-# Composantes utilisées
-## Spécifications
-### Fiche techniques
-- Télecom : [XBEE](https://www.digi.com/resources/documentation/digidocs/pdfs/90002173.pdf "XBEE Datasheet")
-- Accéléromètre/Gyroscope/Magnétomètre : [Adafruit_TDK_InvenSense](https://learn.adafruit.com/adafruit-tdk-invensense-icm-20948-9-dof-imu/overview "Adafruit TDK InvenSense Datasheet")
-- Altimètre/Thermomètre : [BMP388](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp388-ds001.pdf "BMP388 Datasheet")
-- GPS : 
-### Communication
-#### Protocoles supportés
-| Type                       | Nom                     | I2C   | UART   | SPI   | RS-232   |
-| -------------------------- | ----------------------- | :---: | :----: | :---: | :------: |
-| Telecomunication           | XBEE                    |       | X      | X     |          |
-| Acceléro/Gyro/Magnétomètre | Adafruit TDK InvenSense | X     |        | X     |          |
-| Altimètre/Thermomètre      | BMP388                  | X     |        | X     |          |
-| GPS                        |                         |       |        |       |          |
