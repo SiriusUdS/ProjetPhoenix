@@ -1,10 +1,7 @@
 # Overview
 ## [Components](#components)
-###   [Specs](#specs)
-####     [Datasheets](#datasheets)
-###   [Communication](#communication)
-####     [Supported-Protocols](#supported-protocols)
-
+### - [Specs](#specs)
+### - [Communication](#communication)
 ## [Communication-Protocols](#communication-protocols)
 ### - [SPI-(Serial-Peripheral-Interface)](#spi-serial-peripheral-interface)
 
@@ -14,15 +11,15 @@
 - Télecom : [XBEE](https://www.digi.com/resources/documentation/digidocs/pdfs/90002173.pdf "XBEE Datasheet")
 - Accéléromètre/Gyroscope/Magnétomètre : [Adafruit_TDK_InvenSense](https://learn.adafruit.com/adafruit-tdk-invensense-icm-20948-9-dof-imu/overview "Adafruit TDK InvenSense Datasheet")
 - Altimètre/Thermomètre : [BMP388](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp388-ds001.pdf "BMP388 Datasheet")
-- GPS : 
+- GPS : [BN-220](https://files.banggood.com/2016/11/BN-220%20GPS+Antenna%20datasheet.pdf "BN-220 Datasheet")
 ### Communication
 #### Supported Protocols
-| Type                       | Nom                     | I2C   | UART   | SPI   | RS-232   |
-| -------------------------- | ----------------------- | :---: | :----: | :---: | :------: |
-| Telecomunication           | XBEE                    |       | X      | X     |          |
-| Acceléro/Gyro/Magnétomètre | Adafruit TDK InvenSense | X     |        | X     |          |
-| Altimètre/Thermomètre      | BMP388                  | X     |        | X     |          |
-| GPS                        |                         |       |        |       |          |
+| Type                       | Nom                     | I2C   | UART   | SPI   | NMEA 0183 |
+| -------------------------- | ----------------------- | :---: | :----: | :---: | :------:  |
+| Telecomunication           | XBEE                    |       | X      | X     |           |
+| Acceléro/Gyro/Magnétomètre | Adafruit TDK InvenSense | X     |        | X     |           |
+| Altimètre/Thermomètre      | BMP388                  | X     |        | X     |           |
+| GPS                        | BN-220                  |       |        |       | X         |
 
 # Communication Protocols
 ## SPI (Serial Peripheral Interface)
@@ -74,3 +71,4 @@
 ![alt text](Images/SPI_HalfDuplex.PNG "Half-Duplex PIN Configuration")
 #### Full-Duplex (1:n)
 ![alt text](Images/SPI_FullDuplex_Mult.PNG "Full-Duplex PIN Configuration, for multiple slaves")
+
