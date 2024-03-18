@@ -50,9 +50,16 @@
 ![alt text](Images/SPI_FullDuplex_Mult.PNG "Full-Duplex PIN Configuration, for multiple slaves")
 
 # Composantes utilisées
-## Communication
-
-|                   | Supporté                  |
-| Type    | Nom     | I2C | UART | SPI | RS-232 |
-| ------- | ------- | --- | ---- | --- | ------ |
-| Telecom | XBEE    |     | X    | X   |        |
+## Spécifications
+### Fiche techniques
+..*Télecom : [XBEE](https://www.digi.com/resources/documentation/digidocs/pdfs/90002173.pdf)
+..*Accéléromètre/Gyroscope/Magnétomètre : [Adafruit_TDK_InvenSense](https://learn.adafruit.com/adafruit-tdk-invensense-icm-20948-9-dof-imu/overview)
+..*Altimètre/Thermomètre : [BMP388](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp388-ds001.pdf)
+..*GPS : 
+### Communication
+#### Protocoles supportés
+| Type                       | Nom                     | I2C   | UART   | SPI   | RS-232   |
+| -------------------------- | --------                | :---: | :----: | :---: | :------: |
+| Telecomunication           | XBEE                    |       | X      | X     |          |
+| Acceléro/Gyro/Magnétomètre | Adafruit TDK InvenSense | X     |        | X     |          |
+| Altimètre/Thermomètre      | BMP388                  | X     |        | X     |          |
