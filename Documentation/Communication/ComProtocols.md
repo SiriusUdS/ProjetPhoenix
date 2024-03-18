@@ -10,11 +10,11 @@
 
 ##### Data Transfer (Full-Duplex)
 ###### Output
-| Nom   | Signification                | | Nom   | Signification                |
-| ----- | ---------------------------- | | ----- | ---------------------------- |
-| SDO   | Serial Data Out              | | SDI   | Serial Data In               |
-| MOSI  | Master Out Slave In          | | MISO  | Master In Slave Out          |
-| COPI  | Controller Out Peripheral In | | CIPO  | Controller In Peripheral Out |
+| Nom   | Signification                |
+| ----- | ---------------------------- |
+| SDO   | Serial Data Out              |
+| MOSI  | Master Out Slave In          |
+| COPI  | Controller Out Peripheral In |
 
 ###### Input
 | Nom   | Signification                |
@@ -41,6 +41,10 @@
 | CPOL  | Clock Polarity |
 | CPHA  | Clock Phase    |
 
-### Modes d'opération
-#### Full-Duplex
+### Modes d'opération (Configuration des pins)
+#### Full-Duplex (1..1)
 ![alt text](Images/SPI_FullDuplex.PNG "Full-Duplex PIN Configuration")
+#### Half-Duplex
+![alt text](Images/SPI_HalfDuplex.PNG "Half-Duplex PIN Configuration")
+#### Full-Duplex (1..n)
+![alt text](Images/SPI_FullDuplex_Mult.PNG "Full-Duplex PIN Configuration, for multiple slaves")
