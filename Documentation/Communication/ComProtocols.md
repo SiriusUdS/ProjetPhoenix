@@ -30,10 +30,10 @@
 | SDIO  | Serial Data In/Out |
 
 ##### Chip Select
-| Nom   | Signification |
-| ----- | ------------- |
-| CS    | Chip Select   |
-| SS    | Slave Select  |
+| Nom     | Signification |
+| -----   | ------------- |
+| CS      | Chip Select   |
+| SS/SSEL | Slave Select  |
 
 #### Modes
 | Nom   | Signification  |
@@ -42,9 +42,17 @@
 | CPHA  | Clock Phase    |
 
 ### Modes d'opération (Configuration des pins)
-#### Full-Duplex (1..1)
+#### Full-Duplex (1:1)
 ![alt text](Images/SPI_FullDuplex.PNG "Full-Duplex PIN Configuration")
 #### Half-Duplex
 ![alt text](Images/SPI_HalfDuplex.PNG "Half-Duplex PIN Configuration")
-#### Full-Duplex (1..n)
+#### Full-Duplex (1:n)
 ![alt text](Images/SPI_FullDuplex_Mult.PNG "Full-Duplex PIN Configuration, for multiple slaves")
+
+# Composantes utilisées
+## Communication
+
+|                   | Supporté                  |
+| Type    | Nom     | I2C | UART | SPI | RS-232 |
+| ------- | ------- | --- | ---- | --- | ------ |
+| Telecom | XBEE    |     | X    | X   |        |
