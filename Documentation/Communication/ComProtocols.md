@@ -72,3 +72,4 @@
 #### Full-Duplex (1:n)
 ![alt text](Images/SPI_FullDuplex_Mult.PNG "Full-Duplex PIN Configuration, for multiple slaves")
 
+## UART
