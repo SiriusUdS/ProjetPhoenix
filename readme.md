@@ -1,6 +1,5 @@
 # Project Name
 ProjectPhoenix
-
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -11,7 +10,7 @@ ProjectPhoenix
 
 
 ## Introduction
-This repo contains source code for telemetry of projectPhoenix 
+This repo contains source code for telemetry of projectPhoenix
 
 ## Prerequisites
 Ubuntu 22.02 or Debian 12  (https://www.debian.org/distrib/) (https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview)

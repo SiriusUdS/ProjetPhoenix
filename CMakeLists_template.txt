@@ -1,7 +1,11 @@
 #${templateWarning}
 set(CMAKE_SYSTEM_NAME Generic)
 set(CMAKE_SYSTEM_VERSION 1)
+<<<<<<< Updated upstream
 ${cmakeRequiredVersion}
+=======
+cmake_minimum_required(VERSION 3.25)
+>>>>>>> Stashed changes
 # project settings
 project(${projectName} C CXX ASM)
 set(CMAKE_CXX_STANDARD 17)
@@ -31,6 +35,5 @@ endif ()
 add_subdirectory(Middlewares)
 add_subdirectory(Core)
 add_subdirectory(Drivers)
-add_subdirectory(USB_HOST)
 add_subdirectory(proto)
-add_subdirectory(tests)
+#add_subdirectory(tests)
