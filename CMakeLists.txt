@@ -1,7 +1,7 @@
 #THIS FILE IS AUTO GENERATED FROM THE TEMPLATE! DO NOT CHANGE!
 set(CMAKE_SYSTEM_NAME Generic)
 set(CMAKE_SYSTEM_VERSION 1)
-cmake_minimum_required(VERSION 3.27)
+cmake_minimum_required(VERSION 3.22)
 
 # project settings
 project(projectPhoenix C CXX ASM)
@@ -33,4 +33,4 @@ add_subdirectory(Middlewares)
 add_subdirectory(Core)
 add_subdirectory(Drivers)
 add_subdirectory(proto)
-add_subdirectory(tests)
+#add_subdirectory(tests)

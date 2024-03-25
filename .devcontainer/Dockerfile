@@ -1,5 +1,5 @@
 
-FROM debian:12
+FROM debian:12.1
 
 ARG USERNAME=user
 ARG USER_UID=1000
