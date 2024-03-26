@@ -1,0 +1,10 @@
+XBEE UART
+
+1 : Commencer par envoyer un b
+
+2 (pinout xbee):
+	pin 1: 3v3
+	pin 3: connecter a tx du stm
+	pin 10: ground
+
+3 : baud rate = 9600, data lenght = 8, parity check = none, stop bit = 1, idle level high, bit order LSB
