@@ -79,7 +79,7 @@ bool pb_encode(pb_ostream_t *stream, const pb_msgdesc_t *fields, const void *src
  *                           is a better option for compatibility.
  */
 #define PB_ENCODE_DELIMITED       0x02U
-#define PB_ENCODE_NULLTERMINATED  0x04U
+#define PB_ENCODE_NULLTERMINATED  0
 bool pb_encode_ex(pb_ostream_t *stream, const pb_msgdesc_t *fields, const void *src_struct, unsigned int flags);
 
 /* Defines for backwards compatibility with code written before nanopb-0.4.0 */
