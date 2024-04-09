@@ -22,7 +22,9 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include <stdio.h>
+#include "simple.pb.h"
+#include "pb_encode.h"
+#include "pb_decode.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -117,16 +119,38 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
-  {
+    uint8_t bit [] = "b";
+    HAL_UART_Transmit (&huart2,  bit, sizeof (bit), 10);
+    uint8_t buffer[1024];
+    size_t message_length;
+    bool status;
+
+    SimpleMessage message = SimpleMessage_init_zero;
+
+
+
+    int bidon = 10;
+    while (1)
+    {
+      pb_ostream_t stream = pb_ostream_from_buffer(buffer, sizeof(buffer));
+      message.lucky_number = bidon;
+      bidon += 10000;
+
+      /* Now we are ready to encode the message! */
+      status = pb_encode_ex(&stream, SimpleMessage_fields, &message,PB_ENCODE_DELIMITED);
+      if (!status)
+      {
+        return 1;
+      }
+      message_length = stream.bytes_written;
+      /* Then just check for any errors.. */
+        HAL_UART_Transmit (&huart2, buffer, message_length, 10);
+        HAL_Delay(500);
     /* USER CODE END WHILE */
     MX_USB_HOST_Process();
-    HAL_GPIO_TogglePin(GPIOD, LD4_Pin);
-
-    HAL_Delay(1000);
 
     /* USER CODE BEGIN 3 */
-  }
+    }
   /* USER CODE END 3 */
 }
 
@@ -351,7 +375,7 @@ static void MX_USART2_UART_Init(void)
 
   /* USER CODE END USART2_Init 1 */
   huart2.Instance = USART2;
-  huart2.Init.BaudRate = 115200;
+  huart2.Init.BaudRate = 9600;
   huart2.Init.WordLength = UART_WORDLENGTH_8B;
   huart2.Init.StopBits = UART_STOPBITS_1;
   huart2.Init.Parity = UART_PARITY_NONE;
@@ -453,11 +477,11 @@ static void MX_GPIO_Init(void)
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
-  /* User can add his own implementation to report the HAL error return state */
-  __disable_irq();
-  while (1)
-  {
-  }
+    /* User can add his own implementation to report the HAL error return state */
+    __disable_irq();
+    while (1)
+    {
+    }
   /* USER CODE END Error_Handler_Debug */
 }
 
