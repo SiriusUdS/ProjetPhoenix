@@ -1,7 +1,7 @@
 # Project Name
 ProjectPhoenix
 ## Table of Contents
-bidon
+bidons
 s
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
