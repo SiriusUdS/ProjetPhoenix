@@ -1,6 +1,5 @@
 # Project Name
 ProjectPhoenix
-bidon
 ## Table of Contents
 
 - [Introduction](#introduction)
