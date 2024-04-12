@@ -29,6 +29,8 @@ pipeline {
         always {
             // Post-build actions like cleaning up, notifications, etc.
             echo 'Build process completed.'
+            cleanWs()
+
         }
     }
 }

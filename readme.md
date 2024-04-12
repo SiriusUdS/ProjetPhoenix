@@ -1,8 +1,7 @@
 # Project Name
 ProjectPhoenix
 ## Table of Contents
-bidonss ss
-s
+
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
