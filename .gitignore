@@ -2,6 +2,7 @@ build/
 .cache/
 /.idea/*
 !/.idea/runConfigurations
+!/.idea/misc.xml
 .mxproject
 .project
 
