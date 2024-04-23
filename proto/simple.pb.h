@@ -8,6 +8,7 @@
 #if PB_PROTO_HEADER_VERSION != 40
 #error Regenerate this file with the current version of nanopb generator.
 #endif
+// coment bidon
 
 /* Struct definitions */
 typedef struct _SimpleMessage {
