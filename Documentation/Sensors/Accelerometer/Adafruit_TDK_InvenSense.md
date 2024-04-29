@@ -39,7 +39,7 @@ Magnetic field : ± 4900 μT
 ### Base address
 I2C base address is 0x69.
 ### Pinout
-![alt text](Images/Adafruit_TDK_InvenSense.PNG "Adafruit TDK InvenSense board pinout")
+![Photo of the board's pinout](Images/Adafruit_TDK_InvenSense.png "Adafruit TDK InvenSense board pinout")
 | Pin Name | Role                                             |
 | -------- | :----------------------------------------------: |
 | VIN      | 3-5 VDC power pin (uses voltage regulator).      |
