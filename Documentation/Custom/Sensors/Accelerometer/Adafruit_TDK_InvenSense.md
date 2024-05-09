@@ -1,11 +1,10 @@
 # Overview
+This is documentation for the Adafruit TDK InvenSense board used in the 2024 Phoenix project.
+It is used as reference et contains the user guide for usage of this sensor in the project.
 ## [Specs](#specs)
 ### - [Accelerometer](#accelerometer)
-#### - [Rated values](#rated-values-3)
 ### - [Gyroscope](#gyroscope)
-#### - [Rated values](#rated-values-4)
 ### - [Magnetometer](#magnetometer)
-#### - [Rated values](#rated-values-5)
 ### - [Datasheet](https://invensense.tdk.com/wp-content/uploads/2016/06/DS-000189-ICM-20948-v1.3.pdf "Adafruit TDK InvenSense Datasheet")
 ## [Communication](#communication)
 ### - [Supported protocols](#supported-protocols)
