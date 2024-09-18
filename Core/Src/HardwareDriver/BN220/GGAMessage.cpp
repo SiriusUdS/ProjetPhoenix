@@ -1,0 +1,67 @@
+#include <HardwareDriver/BN220/GGAMessage.hpp>
+
+void GGAMessage::parse(const std::string& message) {
+	std::string delimiter = ",";
+	uint8_t currentField = 0;
+	std::string token;
+	size_t previousIndex = 0;
+	size_t currentIndex = 0;
+
+	const char* message2 = message.c_str();
+	if (message.size() == GGAMessage::emptySize)
+	{
+		return;
+	}
+
+	std::string tempMessage = message;
+	while ((currentIndex = tempMessage.find(delimiter)) != std::string::npos) {
+		token = tempMessage.substr(0, currentIndex);
+		int tokenLength = token.length();
+		tempMessage = tempMessage.substr(currentIndex + 1);
+		switch (currentField)
+		{
+		case 0:
+			if (tokenLength >= 3)
+			{
+				talkerId = token.substr(0, 2);
+				messageId = token.substr(2, 3);
+			}
+			break;
+		case 2:
+			if (tokenLength >= 2)
+			{
+				position.latitude.degrees = std::stoul(token.substr(0, 2));
+				position.latitude.mminutes = static_cast<uint16_t>(std::stof(token.substr(2, currentIndex)) * 1000);
+			}
+			break;
+		case 3:
+			if (tokenLength >= 1)
+			{
+				position.latitude.direction = token[0];
+			}
+			break;
+		case 4:
+			if (tokenLength >= 3)
+			{
+				position.longitude.degrees = std::stoul(token.substr(0, 3));
+				position.longitude.mminutes = static_cast<uint16_t>(std::stof(token.substr(3, currentIndex)) * 1000);
+			}
+			break;
+		case 5:
+			if (tokenLength >= 1)
+			{
+				position.longitude.direction = token[0];
+			}
+		case 6:
+			return;
+		default:
+			break;
+		}
+		previousIndex = currentIndex;
+		currentField++;
+	}
+}
+
+size_t GGAMessage::getMessageSize() {
+	return -1;
+}
